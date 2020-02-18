@@ -10,7 +10,8 @@
       const content = document.querySelector('#content');
 
       let message = xhr.response? JSON.parse(xhr.response).message || (xhr.response) : "";
-
+ 
+      
       switch (xhr.status) {
         case 200:
           content.innerHTML = `<b>Success</b><p>Message: ${message}</p>`;
